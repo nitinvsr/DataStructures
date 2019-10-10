@@ -7,10 +7,14 @@ class Driver{
 		
 		h.put(10,100);
 		h.put(5,25);
+		h.put(6,36);
+		h.put(8,64);
 
-		System.out.println( h.get(10));
-		System.out.println( h.get(50));
-		
+		h.print();
 
+		h.remove(5);
+		h.remove(6);
+
+		h.print();
 	}
 }

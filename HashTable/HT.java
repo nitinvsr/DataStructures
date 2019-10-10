@@ -31,15 +31,35 @@ public class  HT{
 		}
 	}
 
-	void remove()
+	boolean empty(int k)
 	{
-		//need to write
+		int index= hash(k); 
+		if(harr[index]==null)
+			return true;
+		else
+			return false;
+	}
+
+
+
+
+	void remove(int k)
+	{
+		int index =hash(k);
+		harr[index]=null;
+
 	}
 
 
 	void print()
 	{
-		//need to write	
+		for(int i=0;i<997;i++)
+		{
+			if(harr[i]!=null)
+				System.out.println("("+harr[i].key+","+harr[i].value+")");
+		}
 	}
+
+
 
 }
